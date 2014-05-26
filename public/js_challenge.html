@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Challenge</title>
+
+</head>
+<body>
+	<div id="question">
+		<p>Who won the 2007 NBA Championship?</p>
+
+	</div>
+	<button onclick="this.style.visibility='hidden'; text()">Click for Answer</button>
+	<div id="picture">
+		<p>Do you want to see a picture?</p>
+	</div>
+	<button onclick="this.style.visibility='hidden'; picture()">Click me</button>
+
+	<!--Javascript functions -->
+	<script type="text/javascript">
+		function text(){
+				document.getElementById("question").innerHTML='<p>The San Antonio Spurs!!!</p>';
+      	};
+		function picture(){
+			document.getElementById("picture").innerHTML='<img src="/img/spurs.jpg">';
+      	};
+			
+	</script>
+
+</body>
+</html>
