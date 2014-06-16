@@ -1,0 +1,210 @@
+<html>
+<head>
+	<title>wack</title>
+	<style type="text/css">
+	body{
+		background-color: #101010;
+	}
+
+	.hole{
+		float: left;
+		height: 150px;
+		width: 150px;
+	}
+	img{
+		height: 147px;
+		width: 147px;
+	}
+	#hole9{
+		clear: left;
+	}
+	#hole17{
+		clear: left;
+	}
+	#hole25{
+		clear: left;
+	}
+	.board{
+
+	}
+	#counter{
+		color: #FFF;
+	}
+	#stats{
+		float: left;
+	}
+	#start{
+		background-color: #FFF;	
+	}
+	#timer{
+		color: #FFF;
+	}
+	</style>
+</head>
+<body>
+	<div class='container'>  
+		<div class='board'>
+			<div class='hole' id='hole1'>
+				<img class="mole" style="display:none;cursor;pointer;" src="/img/molenski.jpg">
+			</div>
+			<div class='hole' id='hole2'>
+				<img class="mole" style="display:none;cursor;pointer;" src="/img/molenski.jpg">
+			</div>
+			<div class='hole' id='hole3'>
+				<img class="mole" style="display:none;cursor;pointer;" src="/img/molenski.jpg">
+			</div>
+			<div class='hole' id='hole4'>
+				<img class="mole" style="display:none;cursor;pointer;" src="/img/molenski.jpg">
+			</div>
+			<div class='hole' id='hole5'>
+				<img class="mole" style="display:none;cursor;pointer;" src="/img/molenski.jpg">
+			</div>
+			<div class='hole' id='hole6'>
+				<img class="mole" style="display:none;cursor;pointer;" src="/img/molenski.jpg">			
+			</div>
+			<div class='hole' id='hole7'>
+				<img class="mole" style="display:none;cursor;pointer;" src="/img/molenski.jpg">
+			</div>
+			<div class='hole' id='hole8'>
+				<img class="mole" style="display:none;cursor;pointer;" src="/img/molenski.jpg">
+			</div>
+			<div class='hole' id='hole9'>
+				<img class="mole" style="display:none;cursor;pointer;" src="/img/molenski.jpg">
+			</div>
+			<div class='hole' id='hole10'>
+				<img class="mole" style="display:none;cursor;pointer;" src="/img/molenski.jpg">
+			</div>
+			<div class='hole' id='hole11'>
+				<img class="mole" style="display:none;cursor;pointer;" src="/img/molenski.jpg">
+			</div>
+			<div class='hole' id='hole12'>
+				<img class="mole" style="display:none;cursor;pointer;" src="/img/molenski.jpg">
+			</div>
+			<div class='hole' id='hole13'>
+				<img class="mole" style="display:none;cursor;pointer;" src="/img/molenski.jpg">
+			</div>
+			<div class='hole' id='hole14'>
+				<img class="mole" style="display:none;cursor;pointer;" src="/img/molenski.jpg">
+			</div>
+			<div class='hole' id='hole15'>
+				<img class="mole" style="display:none;cursor;pointer;" src="/img/molenski.jpg">
+			</div>
+			<div class='hole' id='hole16'>
+				<img class="mole" style="display:none;cursor;pointer;" src="/img/molenski.jpg">
+			</div>
+			<div class='hole' id='hole17'>
+				<img class="mole" style="display:none;cursor;pointer;" src="/img/molenski.jpg">
+			</div>
+			<div class='hole' id='hole18'>
+				<img class="mole" style="display:none;cursor;pointer;" src="/img/molenski.jpg">
+			</div>
+			<div class='hole' id='hole19'>
+				<img class="mole" style="display:none;cursor;pointer;" src="/img/molenski.jpg">
+			</div>
+			<div class='hole' id='hole20'>
+				<img class="mole" style="display:none;cursor;pointer;" src="/img/molenski.jpg">
+			</div>
+			<div class='hole' id='hole21'>
+				<img class="mole" style="display:none;cursor;pointer;" src="/img/molenski.jpg">
+			</div>
+			<div class='hole' id='hole22'>
+				<img class="mole" style="display:none;cursor;pointer;" src="/img/molenski.jpg">
+			</div>
+			<div class='hole' id='hole23'>
+				<img class="mole" style="display:none;cursor;pointer;" src="/img/molenski.jpg">
+			</div>
+			<div class='hole' id='hole24'>
+				<img class="mole" style="display:none;cursor;pointer;" src="/img/molenski.jpg">
+			</div>
+			<div class='hole' id='hole25'>
+				<img class="mole" style="display:none;cursor;pointer;" src="/img/molenski.jpg">
+			</div>
+			<div class='hole' id='hole26'>
+				<img class="mole" style="display:none;cursor;pointer;" src="/img/molenski.jpg">
+			</div>
+			<div class='hole' id='hole27'>
+				<img class="mole" style="display:none;cursor;pointer;" src="/img/molenski.jpg">
+			</div>
+			<div class='hole' id='hole28'>
+				<img class="mole" style="display:none;cursor;pointer;" src="/img/molenski.jpg">
+			</div>
+			<div class='hole' id='hole29'>
+				<img class="mole" style="display:none;cursor;pointer;" src="/img/molenski.jpg">
+			</div>
+			<div class='hole' id='hole30'>
+				<img class="mole" style="display:none;cursor;pointer;" src="/img/molenski.jpg">
+			</div>
+			<div class='hole' id='hole31'>
+				<img class="mole" style="display:none;cursor;pointer;" src="/img/molenski.jpg">
+			</div>
+			<div class='hole' id='hole32'>
+				<img class="mole" style="display:none;cursor;pointer;" src="/img/molenski.jpg">
+			</div>
+		</div>
+		<div id='stats'>
+		<span id="dummy"></span>
+		<!--adding button to start-->
+		<input id="start" type="button" value="Start"/>
+		<div id="counter">Smacks:0</div>
+		<div id="timer">SEC LEFT: 30</div>
+	</div>
+	</div>
+	<!-- javascript -->
+	<script src="/js/jquery.js"></script>
+	
+	<script type="text/javascript">
+
+		var time = 30;
+		var count = 0;
+		var gameInterval;
+		var holes = $('.hole');
+
+		var action = function(){
+
+			var id = setInterval(function() {
+				holes.children().fadeOut();
+				var rand = Math.floor(Math.random() * holes.length);
+				$(holes[rand]).children().fadeIn();
+				$('#timer').html("SEC LEFT: " + time);
+				countdown();
+			}, 1000);
+			return id;
+		};
+		var countdown = function(){
+			--time;
+			if (time <= -1){
+				// end game action
+				clearInterval(gameInterval);
+				
+			}
+
+		};
+		// adding counter
+		$(".hole").children().click(function() {
+    		count++;
+    		$("#counter").html("Smacks: " + count);
+		});
+
+
+		//adding button to start
+		$('#start').click(function(){
+			//jquery for image effect
+			gameInterval = action();
+			// clear
+			
+			/
+			
+		});
+
+
+// function startGame returns setInterval
+// var intervalId = startGame();
+
+// setTimeout clearInterval(intervalId), 300000
+
+
+
+	</script>
+
+</body>
+</html>
