@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>Exampe jQuery Page</title>
+    <style>
+        .centered {
+            text-align: center;
+        }
+        .highlighted {
+            background-color: #FF0;
+        }
+    </style>
+    <script src="/js/jquery.js"></script>
+    <script>
+        $('document').ready(function() {
+            $('#highlight-important').click(function(event) {
+                event.preventDefault();
+                $('.important').toggleClass('highlighted');
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Example Page</h1>
+    <div class="centered important highlighted">
+        <h3>NOTICE</h3>
+        <p>This is an important message!</p>
+    </div>
+    <div class="not-important">
+        <h2>Lorem Ipsum</h2>
+        <p>Lorem ipsum dolor sit amet, incididunt ut <span class="important highlighted">labore et dolore magna aliqua.</span>, quis ut aliquip ex ea commodo.</p>
+    </div>
+    <p class="centered important highlighted">
+        This is also very important.
+    </p>
+    <a href="#" id="highlight-important">Click to toggle the highlighting of important text.</a>
+</body>
+</html>
